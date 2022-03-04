@@ -1,0 +1,19 @@
+{
+  "name": "blok-tech-",
+  "version": "1.0.0",
+  "description": "like feature",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laibaaac/blok-tech.git"
+  },
+  "author": "laiba choudhry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laibaaac/blok-tech/issues"
+  },
+  "homepage": "https://github.com/laibaaac/blok-tech#readme"
+}
