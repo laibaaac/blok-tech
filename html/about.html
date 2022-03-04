@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>about you</title>
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
+    <header>
+        <h1>Tell us about yourself</h1>
+    </header>
+
+    <main>
+        <form action="../html/home.html">
+            <fieldset class="data">
+                <label for="postcode">postalcode</label>
+                <input type="Postalcode" id="postalcode" placeholder="4 digits" required>
+
+                    <label for="allergy">allergy / dietary restrictions</label>
+                    <select name="allergy" id="allergy">
+                      <option value="seafood">Seafood</option>
+                      <option value="nuts">Nuts</option>
+                      <option value="halal">Halal</option>
+                      <option value="milk">Lactose</option>
+                      <option value="vegetarian">Vegetarian</option>
+                      <option value="Vegan">Vegan</option>
+                      <option value="gluten">Gluten</option>
+                      <option value="soy">Soy</option>
+                    </select>
+            </fieldset>
+            <input type="submit" value="Find!">
+        </form>
+        </main>
     
 </body>
 </html>
