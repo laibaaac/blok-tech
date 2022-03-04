@@ -1,3 +1,1 @@
-# blok-tech
-blok tech hierin zit fed, backend en project tech in 
-
+dit is een nieuwe file voor block tech 
