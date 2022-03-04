@@ -4,6 +4,7 @@
   "description": "like feature",
   "main": "helloworld.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/laibaaac/blok-tech/issues"
   },
-  "homepage": "https://github.com/laibaaac/blok-tech#readme"
+  "homepage": "https://github.com/laibaaac/blok-tech#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
