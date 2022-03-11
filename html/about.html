@@ -7,32 +7,39 @@
     <title>about you</title>
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
-<body>
+<body class="about">
     <header>
         <h1>Tell us about yourself</h1>
     </header>
 
     <main>
         <form method="GET" action="/result">
-            <fieldset class="data">
-                <label for="place">postalcode</label>
-                <input type="text" id="place" name= "place" required>
+            <fieldset class="info container" >
+                <div class="plaats">      
+                <label for="city">City</label>
 
-                    <label for="allergy">allergy / dietary restrictions</label>
-                    <select name="allergy" id="allergy">
-                      <option value="seafood">Seafood</option>
-                      <option value="nuts">Nuts</option>
-                      <option value="halal">Halal</option>
-                      <option value="milk">Lactose</option>
-                      <option value="vegetarian">Vegetarian</option>
-                      <option value="Vegan">Vegan</option>
-                      <option value="gluten">Gluten free</option>
-                      <option value="soy">Soy</option>
-                    </select>
+                <input type="text" id="city" name= "city" required>
+                </div>
+                <img src="../img/locatieping.png" alt="fotolocatie"> 
             </fieldset>
-            <input type="submit" value="Find!">
+          
+            <fieldset class="info">
+                <label for="allergy">Allergy / dietary restrictions</label>
+                <select name="allergy" id="allergy" class="aller">
+                  <option value="seafood">Seafood</option>
+                  <option value="nuts">Nuts</option>
+                  <option value="halal">Halal</option>
+                  <option value="milk">Lactose</option>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="Vegan">Vegan</option>
+                  <option value="gluten">Gluten free</option>
+                  <option value="soy">Soy</option>
+                </select>
+            </Fieldset>
+    
         </form>
         </main>
+
     
 </body>
 </html>
