@@ -84,8 +84,8 @@ const restaurants = [
       res.send('<h1>Restaurant</h1>')
     })
 
-    app.get('/test', (req, res) => {
-      res.render
+    app.get('/about', (req, res) => {
+      res.render("about")
     })
 
     //listen on port 3000
