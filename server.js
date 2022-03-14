@@ -3,8 +3,13 @@ const express = require('express');
 const res = require('express/lib/response');
 const app = express();
 const port = 3000;
-   app.use(express.static('public'))
+const dotenv = require('dotenv').config();
 
+console.log(process.env.TESTVAR)
+
+const bodyParser = require('body-parser');
+
+app.use(express.static('public'))
 // Startpunt, de gebruiker zijn/haar locatie
 const start = {
   latitude: 52.370216,
@@ -59,24 +64,6 @@ const restaurants = [
     {
       "id": 5,
       "name": "Istanbul",
-    },
-    {
-      "id": 6,
-      "name": "Saigon",
-    },
-    {
-      "id": 7,
-      "name": "Pho 91",
-    },
-    {
-      "id": 8,
-      "name": "Thai",
-    }, {
-      "id": 9,
-      "name": "Grill",
-    }, {
-      "id": 10,
-      "name": "Pizzeria",
     }
   ];
 
@@ -96,7 +83,16 @@ const restaurants = [
 
  
 
+    app.post ('/ditistijdelijk', (req, res) => {
+      console.log(req.body);
+      const restaurant = {
+        name: req.body.eenvariabele
 
+      }
+      restaurant.push(restaurant)
+      title = "hetisgelukt"
+      res.render('restaurant', ('hetisgelukt', {restaurant}));
+    })
 
 
     app.use ((req, res, next) => {
@@ -105,8 +101,13 @@ const restaurants = [
     //dit gebeurdt er wanneer ik een pagina heb die niet in mijn route ontstaat
 
 
-    //app.get('/restaurant/add', (req, res)
+    app.get('/restaurant/add', (req, res) =>{
+      const title = "Add a new restaurant";
+      res.render('addrest', {title});
+    });
 
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({extended: true}))
 
 
     //listen on port 3000
