@@ -1,0 +1,27 @@
+[
+    {   
+    "id": 1,
+        "name": "Namaste",
+        "location": {
+          "lat": 52.326671,
+          "long": 4.912476
+        }
+      },
+      {
+        "id": 2,
+        "name": "Queen R"
+      },
+      {
+          
+        "id": 3,
+        "name": "Ramen ya"
+      },
+      {
+        "id": 4,
+        "name": "Poke"
+      },
+      {
+        "id": 5,
+        "name": "Istanbul"
+      }
+    ]

@@ -4,10 +4,17 @@ const res = require('express/lib/response');
 const app = express();
 const port = 3000;
 const dotenv = require('dotenv').config();
-
+const { MongoClient }=require('mongodb');
+const { ObjectID } = require('mongodb');
 console.log(process.env.TESTVAR)
 
 const bodyParser = require('body-parser');
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}))
+
+let db = null;
 
 app.use(express.static('public'))
 // Startpunt, de gebruiker zijn/haar locatie
@@ -79,7 +86,7 @@ const restaurants = [
     //app.get ('/restaurant/:id', (req, res) =>{
       //const restaurant = restaurant.find(element =>element.id == id)
     //  const id = req.params.id
-    //}
+  
 
  
 
@@ -106,9 +113,10 @@ const restaurants = [
       res.render('addrest', {title});
     });
 
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({extended: true}))
 
+    async function connectionDB() {
+      const uri = process.env.DB_URI;
+    }
 
     //listen on port 3000
     app.listen(port, () => console.info(`listening on port ${port}`))
