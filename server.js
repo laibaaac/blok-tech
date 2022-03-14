@@ -1,5 +1,6 @@
 const haversine = require('haversine');
 const express = require('express');
+const res = require('express/lib/response');
 const app = express();
 const port = 3000;
 
@@ -78,6 +79,18 @@ const restaurants = [
       "name": "Pizzeria",
     }
   ];
+  app.get('/', (req, res) => {
+    let doc = '!doctype html';
+    doc += '<title> Restaurant</title>'
+    doc += '<h1>Restaurant</h1>'
+    
+//hier laat ik de verschillende restuaranten zien
+      restaurant.forEach(restaurant =>{
+        doc += "<section>";
+      
+      }
+  });
+  res.send(doc);
 
 
     app.get('/', (req, res) => {
