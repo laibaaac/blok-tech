@@ -3,7 +3,7 @@ const express = require('express');
 const res = require('express/lib/response');
 const app = express();
 const port = 3000;
-
+   app.use(express.static('public'))
 
 // Startpunt, de gebruiker zijn/haar locatie
 const start = {
@@ -79,20 +79,8 @@ const restaurants = [
       "name": "Pizzeria",
     }
   ];
-  app.get('/', (req, res) => {
-    let doc = '!doctype html';
-    doc += '<title> Restaurant</title>'
-    doc += '<h1>Restaurant</h1>'
-    
-//hier laat ik de verschillende restuaranten zien
-      restaurant.forEach(restaurant =>{
-        doc += "<section>";
-      
-      }
-  });
-  res.send(doc);
 
-
+  
     app.get('/', (req, res) => {
       res.send('<h1>Restaurant</h1>')
     })
@@ -100,6 +88,26 @@ const restaurants = [
     app.get('/about', (req, res) => {
       res.render("about")
     })
+    
+    //app.get ('/restaurant/:id', (req, res) =>{
+      //const restaurant = restaurant.find(element =>element.id == id)
+    //  const id = req.params.id
+    //}
+
+ 
+
+
+
+
+    app.use ((req, res, next) => {
+      res.status(404).send('Error 404: file not found')
+    });
+    //dit gebeurdt er wanneer ik een pagina heb die niet in mijn route ontstaat
+
+
+    //app.get('/restaurant/add', (req, res)
+
+
 
     //listen on port 3000
     app.listen(port, () => console.info(`listening on port ${port}`))
