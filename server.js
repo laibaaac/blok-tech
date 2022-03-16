@@ -6,7 +6,8 @@ const port = 3000;
 const dotenv = require('dotenv').config();
 const { MongoClient }=require('mongodb');
 const { ObjectID } = require('mongodb');
-console.log(process.env.TESTVAR)
+
+
 
 const bodyParser = require('body-parser');
 
@@ -88,7 +89,64 @@ const restaurants = [
     //  const id = req.params.id
   
 
- 
+
+    /*****************************************************
+    * Connect to database
+    ****************************************************/
+    asyncfunctionconnectDB() {​
+    consturi = process.env.DB_URI;
+    constclient = newMongoClient(uri, {​
+    useNewUrlParser:true,
+    useUnifiedTopology:true,
+    }​);
+    try {​
+    awaitclient.connect();
+    db = client.db(process.env.DB_NAME);
+    }​ catch (error) {​
+    throwerror;
+    }​
+    }​
+
+  app.get('/', async (req, res) => {
+      // GET LIST OF MOVIES
+      const query = {"location": "amsterdam"}
+      const options = {sort : {location:amsterdam}}
+      //hier word er soort van gefilterd
+      const restaurant = await db.collection('restaurant').find(query, options).toArray();
+  
+      // RENDER PAGE
+     // const title  = (movies.length == 0) ? "No movies were found" : "Movies";
+     // res.render('', {title, movies});
+  });
+    
+  app.get('/movies/:movieId', async (req, res) => {
+
+    // FIND restaurant
+    const id = req.params.restaurantId;
+    const query = {_id: ObjectId(req.params.restaurantId)}
+    const restaurant = await db.collection('restaurant').findOne(query);
+
+    // RENDER PAGE
+    const title = `Moviedetails for ${movie.name}`;
+    res.render('moviedetails', {title, movie});
+});
+
+  app.post('/restaurant/add', async (req, res) => {
+    // ADD 
+    let restaurant = {
+        slug: slug(req.body.name),
+        name: req.body.name, 
+       location: req.body.location
+    };
+    await db.collection('restaurant').insertOne(movie);
+    const query = {"location": "amsterdam"}
+    const options = {sort : {location:amsterdam}}
+    //hier word er soort van gefilterd
+    const restaurant = await db.collection('restaurant').find(query, options).toArray();
+
+
+
+
 
     app.post ('/ditistijdelijk', (req, res) => {
       console.log(req.body);
@@ -97,6 +155,7 @@ const restaurants = [
 
       }
       restaurant.push(restaurant)
+    
       title = "hetisgelukt"
       res.render('restaurant', ('hetisgelukt', {restaurant}));
     })
@@ -113,10 +172,14 @@ const restaurants = [
       res.render('addrest', {title});
     });
 
-
     async function connectionDB() {
       const uri = process.env.DB_URI;
     }
+    /*** Start webserver */
+    app.listen(port, ()=> {
+      connectionDB().then => console.log("we have a connection to mongo!");
+    });
+
 
     //listen on port 3000
     app.listen(port, () => console.info(`listening on port ${port}`))
