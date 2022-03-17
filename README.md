@@ -22,7 +22,11 @@ Ik wil dit bereiken door een API genaamd geolocation en een externe API.
 
 # Tools
 De volgende tools heb ik gebruikt:
-* Node 
+* Node.js
+* NPM
+* Express
+* MongoDB atlas en compass
+* EJS template engine
 
 # Installatie
 
@@ -30,3 +34,5 @@ De volgende tools heb ik gebruikt:
 2. npm package installeren = npm install
 3. mijn server te starten = npm start
 4. nodemon installeren (moet in je dev dependencies komen) = npm install --save-dev nodemon
+5. MongoDB (zie database structuur)
+6. EJS = npm install ejs
