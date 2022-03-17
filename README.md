@@ -19,3 +19,18 @@ Dit is mijn feature die ik ga uitwerken voor het vak project tech. Hier ga ik ge
 Wanneer je gaat filteren kan je allergie/ dieet restrictie doorgevenb maar ook kan je jouw locatie doorgeven. 
 Je kan het zelf invoeren of door progressive enhancement wordt het opgehaald. 
 Ik wil dit bereiken door een API genaamd geolocation en een externe API. 
+
+# Tools
+De volgende tools heb ik gebruikt:
+*Node.js
+*Npm
+*Express
+*Mongodb Atlas en Mongodb Compass
+*Ejs template engine
+
+# Installatie
+
+1. Clone mijn repository = git clone https://github.com/laibaaac/blok-tech.git
+2. npm package installeren = npm install
+3. mijn server te starten = npm start
+4. nodemon installeren (moet in je dev dependencies komen) = npm install --save-dev nodemon
