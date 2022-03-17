@@ -22,9 +22,7 @@ Ik wil dit bereiken door een API genaamd geolocation en een externe API.
 
 # Tools
 De volgende tools heb ik gebruikt:
-*Node js
-*NPM
-*
+* Node 
 
 # Installatie
 
