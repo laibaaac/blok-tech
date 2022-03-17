@@ -22,11 +22,9 @@ Ik wil dit bereiken door een API genaamd geolocation en een externe API.
 
 # Tools
 De volgende tools heb ik gebruikt:
-*Node.js
-*Npm
-*Express
-*Mongodb Atlas en Mongodb Compass
-*Ejs template engine
+*Node js
+*NPM
+*
 
 # Installatie
 
