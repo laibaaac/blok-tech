@@ -69,34 +69,35 @@ console.log(distance.toFixed(2))
       res.send('<h1>Restaurant</h1>')
     })
 */
+
 app.get('/about', (req, res) => {
-  res.render("about")
+  res.render("about");
 });
 
-//app.get ('/restaurant/:id', (req, res) =>{
-//const restaurant = restaurant.find(element =>element.id == id)
-//  const id = req.params.id
+app.get ('/restaurant/:id', (req, res) =>{
+const restaurant = restaurant.find(element =>element.id == id);
+const id = req.params.id;
+});
 
 
 
 /*****************************************************
  * Connect to database
  ****************************************************/
-async function connectDB() {
-
-  const uri = process.env.DB_URI;
-  const client = newMongoClient(uri, {
+ async function connectDB() {
+  const uri = process.env.DB_URI
+  const client = new MongoClient(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  });
+  })
   try {
-    await client.connect();
-    db = client.db(process.env.DB_NAME);
-  }
-  catch (error) {
-    throw error;
+    await client.connect()
+    db = client.db(process.env.DB_NAME)
+  } catch (error) {
+    throw error
   }
 }
+
 
 
 /*app.get('/', async (req, res) => {
@@ -122,6 +123,7 @@ async function connectDB() {
     const title = `Moviedetails for ${movie.name}`;
     res.render('moviedetails', {title, movie});
 });
+*/
 
   /*app.post('/restaurant/add', async (req, res) => {
     // ADD 
@@ -133,6 +135,7 @@ async function connectDB() {
     await db.collection('restaurant').insertOne(movie);
     const query = {"location": "amsterdam"}
     const options = {sort : {location:amsterdam}}
+    
     //hier word er soort van gefilterd
     const restaurant = await db.collection('restaurant').find(query, options).toArray();
 */
