@@ -3,46 +3,31 @@
     "id": 1,
         "slug": "Namaste",
         "name": "Namaste",
-        "location": {
-          "lat": 52.326671,
-          "long": 4.912476
-        }
+        "location": "Amsterdam"
       },
       {
         "id": 2,
         "slug": "Queen R",
         "name": "Queen R",
-        "location": {
-          "lat": 52.326671,
-          "long": 4.912476
-        }
+        "location": "Amsterdam"
       },
       {
           
         "id": 3,
         "slug": "Ramen ya",
         "name": "Ramen ya",
-        "location": {
-          "lat": 52.326671,
-          "long": 4.912476
-        }
+        "location": "Rotterdam"
       },
       {
         "id": 4,
         "slug": "Poke",
         "name": "Poke",
-        "location": {
-          "lat": 52.326671,
-          "long": 4.912476
-        }
+        "location": "Den haag"
       },
       {
         "id": 5,
         "slug": "Istanbul",
         "name": "Istanbul",
-        "location": {
-          "lat": 52.326671,
-          "long": 4.912476
-        }
+        "location": "Amsterdam"
       }
     ]

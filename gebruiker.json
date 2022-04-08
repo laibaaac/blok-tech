@@ -2,12 +2,7 @@
     {   
     "id": 200,
         "name": "Dina Burke",
-        
-      },
-      {
-        "id": 250,
-        "name": "Sven van der kamp",
-        "liked":["o"],
-        "disliked":["nsi"]
+        "liked":[""],
+        "disliked":[""]
       }
 ]

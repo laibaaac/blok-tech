@@ -1,0 +1,13 @@
+body{
+    background-color: pink;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    width: 20em;
+}

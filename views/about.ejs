@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about you</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/about.css">
 </head>
 <body>
     <header>
@@ -15,11 +15,12 @@
     <main>
         <form method="GET" action="/result">
             <fieldset class="data">
-                
-                <label for="place">postalcode</label>
-                <input type="text" id="place" name= "place" required> 
-                
-                    </select>
+                <label for="City">City</label>
+                <select name="city" id="city">
+                  <option value="Amsterdam">Amsterdam</option>
+                  <option value="Den haag">Den haag</option>
+                  <option value="Rotterdam">Rotterdam</option>
+                </select>
             </fieldset>
             <input type="submit" value="Find!">
         </form>
