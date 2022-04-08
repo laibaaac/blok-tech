@@ -75,7 +75,7 @@ console.log(distance.toFixed(2))
     /*****************************************************
     * Connect to database
     ****************************************************/
-    asyncfunctionconnectDB() {​
+    /*async function connectDB() {​
     consturi = process.env.DB_URI;
     constclient = newMongoClient(uri, {​
     useNewUrlParser:true,
@@ -88,7 +88,7 @@ console.log(distance.toFixed(2))
     throwerror;
     }​
     }​
-
+  */
   app.get('/', async (req, res) => {
       // GET LIST OF MOVIES
       const query = {"location": "amsterdam"}
@@ -125,7 +125,7 @@ console.log(distance.toFixed(2))
     const options = {sort : {location:amsterdam}}
     //hier word er soort van gefilterd
     const restaurant = await db.collection('restaurant').find(query, options).toArray();
-
+  })
 
 
 
