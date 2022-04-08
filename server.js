@@ -6,18 +6,26 @@ const port = 3000;
 const dotenv = require('dotenv').config();
 const { MongoClient }=require('mongodb');
 const { ObjectID } = require('mongodb');
-
-
-
 const bodyParser = require('body-parser');
+const slug = require('slug');
 
 
+/********
+  middleware
+ */
+app.use(express.static('views'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
 let db = null;
 
-app.use(express.static('public'))
+
+
+app.set('view engine', 'ejs');
+
+
+
+
 // Startpunt, de gebruiker zijn/haar locatie
 const start = {
   latitude: 52.370216,
@@ -49,33 +57,7 @@ console.log(distance.toFixed(2))
 
 // restaurants.sort(compare)
 
-const restaurants = [
-  {   "id": 1,
-      "name": "Namaste",
-      "location": {
-        lat: 52.326671,
-        long: 4.912476
-      }
-    },
-    {
-      "id": 2,
-      "name": "Queen R",
-    },
-    {
-      "id": 3,
-      "name": "Ramen ya",
-    },
-    {
-      "id": 4,
-      "name": "Poke",
-    },
-    {
-      "id": 5,
-      "name": "Istanbul",
-    }
-  ];
 
-  
     app.get('/', (req, res) => {
       res.send('<h1>Restaurant</h1>')
     })
