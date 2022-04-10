@@ -1,7 +1,14 @@
+/* eslint-disable quotes */
 
 // eslint-disable-next-line no-unused-vars
-function eenfunctie() {
-    confirm("Are you sure about this city?");
-  }
+const submit = document.querySelector('#Find');
 
-//bron: https://www.foowebs.com/p14-How-to-confirm-before-submitting-a-form-with-popup-box
+/// Dom Manipulatie
+function melding() {
+confirm("Are you sure about this city?");
+}
+
+
+// EventListeners
+submit.addEventListener('click' , melding) ;
+

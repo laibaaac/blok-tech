@@ -5,39 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/food.css">
 </head>
 <body>
     <main>
-
-        <section>
-     
-           <h2>Food Picker</h2>
-     
-           <p>
-               Don't know what to eat? 
-               Try out the food generator! 
-           </p>
-        
-        </section>
-     
      
         <section>
      
-           <article>
+         <div class="container">
+            <div class="row text-center">
+               <h3>
+                  Feeling hungry?
+               </h3>
+               <h5>Get a random meal by clicking below</h5>
+               <button class="button-primary" id="get_meal">Get Meal ?</button>
+            </div>
+            <div id="meal" class="row meal"></div>
+         </div>
 
-              <figure> 
-                 <img src='https://foodish-api.herokuapp.com/images/biryani/biryani32.jpg' class="etenThumbnail" alt="fotovaneten">
-              </figure>
-           
-              <article>
-                 <h3 class="randomFood">Biryani</h3>
-                 <h4>Rice with chicken</h4>
-              </article>
-     
-           </article>
-           
-           <button class="generateFood" type="button" onclick="getRandomFood()">Random</button>
-     
         </section>
      
      </main>
