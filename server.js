@@ -43,13 +43,14 @@ const filter = { location: " " };
 //routes
 
 // eslint-disable-next-line quotes
+
 app.post('/result', async (req, res) => {
   console.log(req.body);
   res.render("about");
   
 });
 
-app.get('/restaurant', async (req, res) => {
+app.post('/restaurant', async (req, res) => {
   res.render('result');
 });
 
