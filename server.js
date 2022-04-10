@@ -44,8 +44,15 @@ const filter = { location: " " };
 
 // eslint-disable-next-line quotes
 
-app.post('/result', async (req, res) => {
+
+
+app.post("/result", async (req, res) => {
   console.log(req.body);
+  res.render("result");
+  
+});
+
+app.get("/about", async (req, res) => {
   res.render("about");
   
 });
