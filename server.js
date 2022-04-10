@@ -89,10 +89,11 @@ app.get("/food", (req, res) => {
 
 
 // eslint-disable-next-line no-unused-vars
-app.use((req, res, next) => {
+/*app.use((req, res, next) => {
   res.status(404).send("Error 404: file not found");
 });
 //dit gebeurdt er wanneer ik een pagina heb die niet in mijn route ontstaat
+*/
 
  async function connectionDB() {
     const uri = process.env.DB_URI;
