@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<body>
+    <main>
+
+        <section>
+     
+           <h2>Restaurant</h2>
+        
+           <%Restaurants.forEach(restaurant => { %>
+                
+           <form method="post" action="/result">
+              <article>
+                 <input type="hidden" name="resultID" value="<%= likedBar._id %>">
+     
+                 <button type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/cross.svg" alt="remove"></button>
+           
+                 <figure> 
+                    <img src="<%= likedBar.imgUrl %>" alt="">
+                 </figure>
+     
+                 <article>
+     
+        
+     
+                    <h3><%= likedBar.title %></h3>
+                    <p><%= likedBar.address %></p>
+     
+                    <h4>Openingstijden:</h4>
+                    <p><%= likedBar.currentStatus %></p>
+                 </article>
+           
+              </article>
+           </form> 
+     
+           <% }); %>
+        
+        </section>
+        
+     </main>
+     
+     
+        
+     <%- include('partials/navigation.ejs') %>
+     
+   
+</body>
+</html>

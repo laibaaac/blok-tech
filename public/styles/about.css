@@ -1,13 +1,42 @@
 body{
-    background-color: pink;
+    background-color: #EBBF69;
 }
 
-
-form{
-    display: flex;
-    flex-direction: column;
+h1{
+   text-align: center;
+}
+img {
+    width: 600px;
+    height: auto;
+    margin-left: -50%;
+}
+.data {
     padding: 1em;
     border-radius: 2em;
     border: none;
     width: 20em;
+}
+select {
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    width: 20em;
+    background-color: white;
+}
+
+
+input[type="submit"]{
+    border: none;
+    color:black;
+    padding: .5em 1em;
+    margin-top: 3em;
+    margin-left: 3.5em;
+    position: absolute;
+    top: 3em;
+    z-index: 1;
+    border-radius: 1.2em;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #EBBF69;
 }
