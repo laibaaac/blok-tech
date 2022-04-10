@@ -39,16 +39,17 @@ let db = null;
 app.set("view engine", "ejs");
 
 const filter = { location: " " };
+
 //routes
 
 // eslint-disable-next-line quotes
-app.post(`/ `, async (req, res) => {
+app.get(`/result`, async (req, res) => {
   console.log(req.body);
   res.render("about");
   
 });
 
-app.get('/result', async (req, res) => {
+app.get('/res', async (req, res) => {
   res.render('result');
 });
 

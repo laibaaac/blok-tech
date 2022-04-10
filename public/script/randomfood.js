@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 let newRandomFood = document.querySelector(".generateFood");
-
-console.log("ik heb een api");
+console.log("ikhebeenapi");
 
 async function getRandomFood() {
   const res = await fetch( "https://foodish-api.herokuapp.com/");
