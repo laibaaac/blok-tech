@@ -13,14 +13,14 @@
     </header>
 
     <main>
-        <form method="get" action="/result">
+        <form method="post" action="/result">
 
             <fieldset class="data">
                 <label for="City">City</label>
                 <select name="city" id="city">
-                  <option value="Amsterdam">Amsterdam</option>
-                  <option value="Den haag">Den haag</option>
-                  <option value="Rotterdam">Rotterdam</option>
+                  <option name="location" value="Amsterdam">Amsterdam</option>
+                  <option name="location" value="Den haag">Den haag</option>
+                  <option name="location" value="Rotterdam">Rotterdam</option>
                 </select>
             </fieldset>
             <input type="submit" value="Find!" id="Find">

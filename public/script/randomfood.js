@@ -6,7 +6,9 @@ const meal_container = document.getElementById("meal");
 
 //hier begint het
 
+// eslint-disable-next-line quotes
 get_meal_btn.addEventListener('click', () => {
+  // eslint-disable-next-line quotes
   fetch('https://www.themealdb.com/api/json/v1/1/random.php')
     .then(res => res.json())
     .then(res => {
@@ -46,3 +48,5 @@ const createMeal = meal => {
 
 	meal_container.innerHTML = newInnerHTML;
 };
+
+//bron:https://www.freecodecamp.org/news/creating-a-random-meal-generator/
