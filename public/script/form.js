@@ -1,9 +1,10 @@
 /* eslint-disable quotes */
 
 // eslint-disable-next-line no-unused-vars
+//hier de id opzoeken via dom
 const submit = document.querySelector('#Find');
 
-/// Dom Manipulatie
+//dom manipulatie
 function melding() {
 confirm("Are you sure about this city?");
 }

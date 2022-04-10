@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/addresto.css">
+</head>
+<body>
+    
+    <main>
+        <form action="/addresto" method="post" enctype="multipart/form-data">
+
+            <label for="restaurant">Restaurant naam</label>
+            <input type="text" name="name" id="name" required />
+                <label for="location">City</label>
+                    <select name="location" id="location">
+                    <option value="Amsterdam">Amsterdam</option>
+                    <option value="Den haag">Den haag</option>
+                    <option value="Rotterdam">Rotterdam</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Add!" id="add">
+        </form>
+    </main>
+    
+
+<script src="/script/succes.js"></script>
+</body>
+</html>
