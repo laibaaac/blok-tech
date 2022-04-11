@@ -1,6 +1,8 @@
-
+body{
+    background-color: #EBBF69;
+}
 #meal{
-    background-color: red;
+    background-color:#EBBF69;
 }
 
 .foto{
@@ -11,4 +13,30 @@
 .foto img{
     width: 100%;
     height: 100%;
+}
+
+h3{
+text-align: center;
+font-weight: bold;
+font-size: 1.5em;
+}
+
+h5{
+    text-align: center;
+    font-size: 1em;
+}
+
+button{
+    border: none;
+    color:black;
+    padding: .5em 1em;
+    margin-left: 2.5em;
+    position: absolute;
+    top: 3em;
+    z-index: 1;
+    border-radius: 1.2em;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: white;
 }

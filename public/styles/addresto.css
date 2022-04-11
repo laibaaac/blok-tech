@@ -2,3 +2,36 @@ body{
     background-color: #EBBF69;;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+    background-color: #EBBF69;
+}
+
+
+select {
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    width: 20em;
+    background-color: white;
+}
+
+
+input[type="submit"]{
+    border: none;
+    color:black;
+    padding: .5em 1em;
+    margin-top: 3em;
+    position: absolute;
+    top: 3em;
+    z-index: 1;
+    border-radius: 1.2em;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: white;
+}
