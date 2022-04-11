@@ -3,22 +3,24 @@ Voor het blok tech hebben wij de opdracht gekregen om een eigen match applicatie
 
 # Concept 
 Mijn concept gaat als volgt:
-Stel je voor je wilt uiteten gaan, maar je hebt een allergie/ dieet restrictie. Hierdoor kan je niet bij elke restaurant eten. 
-Mijn applicatie lost dit op! 
-Je geeft je allergieen/ dieet restricties door en krijg je restaurants te zien die rekening ermee houden. 
+Stel je voor je wilt uiteten gaan, maar je weet niet welke restaurat dichtbij jou is. Maak je geen zorgen Restopicker helpt je daarme!
+De restaurants worden gefilterd op locatie (steden). 
+Heb je zelf een restaurant en wilt die graag laten vertonen op de restopicker app? 
+Dat kan! je kan via een formulier die staat op addresto het formulier invullen, zo kan je jouw eigen restaurant laten zien!
 
 
-# Feature like (save) function 
-Vind je een restaurant interessant? 
-Die kan je dan liken (hartje drukken)! 
-Dit restaurant wordt dan opgeslagen en kan je terug zien in je favorite lijst. 
+# Feature filter
+De restaurants worden gefilterd op locatie (steden). 
+Heb je zelf een restaurant en wilt die graag laten vertonen op de restopicker app? 
+Dat kan! je kan via een formulier die staat op addresto het formulier invullen, zo kan je jouw eigen restaurant laten zien!
 
-Dit is mijn feature die ik ga uitwerken voor het vak project tech. Hier ga ik gebruik maken van Javascript, de restaurants worden opgeslagen in de database.
+Dit is mijn feature die ik ga uitwerken voor het vak project tech. Hier ga ik gebruik maken van Javascript, de restaurants zijn opgeslagen in de database.
 
 # Progressive enhancement & API
-Wanneer je gaat filteren kan je allergie/ dieet restrictie doorgevenb maar ook kan je jouw locatie doorgeven. 
-Je kan het zelf invoeren of door progressive enhancement wordt het opgehaald. 
-Ik wil dit bereiken door een API genaamd geolocation en een externe API. 
+Wanneer het formulier invult, krijg je feedback als het verzonden is of als de gebruiker zeker is van zijn keuze. Deze feedback is te zien in een pop up
+
+Ik heb de API Random meal generator gebruikt, hier krijg je een random maaltijd te zien. Zo kan de gebruiker makkelijker een keuze maken en het bestellen!
+
 
 # Tools
 De volgende tools heb ik gebruikt:
