@@ -1,11 +1,12 @@
 /* eslint-disable quotes */
-const submit = document.querySelector('#add');
+const submit = document.querySelector('form');
 
 //dom manipulatie
-function melding() {
-confirm("Successfully added!");
+function melding(event) {
+    confirm("Successfully added!");
+    event.submit();
 }
 
 
 // EventListeners
-submit.addEventListener('click' , melding) ;
+submit.addEventListener('submit' , melding) ;

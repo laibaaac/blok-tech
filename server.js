@@ -8,7 +8,7 @@ const express = require('express');
 const res = require('express/lib/response');
 const app = express();
 const router = express.Router();
-const port = 3000;
+const port = process.env.PORT || 3000;
 // eslint-disable-next-line no-undef
 // eslint-disable-next-line no-unused-vars
 const dotenv = require('dotenv').config();
@@ -85,16 +85,17 @@ app.get("/addresto", async (req, res) => {
 //hier wordt het nieuwe restaurant gepost (laat zien)
 app.post("/addresto", async (req, res) => {
 
+  console.log('even kijken');
   
   let restaurant = {
     slug: req.body.name,
     name: req.body.name, 
-    location: req.body.location,
+    location: req.body.location
   };
-    console.log(req.body);
-
-  console.log(restaurant);
+  
   await db.collection('restaurant').insertOne(restaurant);
+
+  res.render("addresto");
 });
 //hier wordt het nieuwe restaurant gepost in mijn database
 
