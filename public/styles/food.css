@@ -32,7 +32,6 @@ button{
     padding: .5em 1em;
     margin-left: 2.5em;
     position: absolute;
-    top: 3em;
     z-index: 1;
     border-radius: 1.2em;
     text-decoration: none;
