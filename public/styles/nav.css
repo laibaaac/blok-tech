@@ -1,4 +1,5 @@
 nav {
+    background-color: white;
     position: fixed;
 
     right: 0;
@@ -6,9 +7,6 @@ nav {
     bottom: 0;
 
     height: 5rem;
-
-    border-top: 0.1rem solid var(--grey);
-    background-color: var(--white);
 }
 
 nav ul {
@@ -19,7 +17,6 @@ nav ul {
     height: 100%;
 
     display: flex;
-    flex-direction: row;
 
     justify-content: space-around;
     align-items: center;
@@ -28,35 +25,16 @@ nav ul {
 }
 
 nav ul li a {
-    padding: 0;
-    margin: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 0.25rem;
-
-    font-family: var(--font);
-    font-size: 0.75rem;
 
     text-decoration: none;
+    color: black;
 
-    color: var(--body-text-color);
-    
-    filter: grayscale(100%);
 }
 
-.active {
-    filter: grayscale(0%);
-}
-
-nav ul li a img {
+/*nav ul li a img {
     padding: 0;
     margin: 0;
 
     width: 3rem;
     height: 2rem;
-}
+}*/
